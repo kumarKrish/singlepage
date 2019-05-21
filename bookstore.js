@@ -36,7 +36,7 @@ app.post('/',function(req,res){
 		dbo.collection("math").insertOne(myobj, function(err, res) {
         if (err) throw err;
        console.log("1 document inserted");
-       db.close();
+       client.close();
   });
 })
 
